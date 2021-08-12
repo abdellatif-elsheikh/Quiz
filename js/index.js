@@ -20,7 +20,8 @@ function escapeHtml(text) {
 };
 
 let correctAnswer;
-let arrayOfQuestions =[]
+let arrayOfQuestions =[];
+
 async function showTheData() {
     allQuestions = await fetch(`https://quizapi.io/api/v1/questions?apiKey=tS71R9pwYPmLclULzYk469ngFvelIDa6Y90XvByD&limit=10`);
     allQuestions = await allQuestions.json();
@@ -44,17 +45,13 @@ async function showTheData() {
     Object.keys(checkCorrect).forEach(key => {
         if(checkCorrect[key] === 'true'){
             correctAnswer=key.slice(0,8)
-            console.log(correctAnswer);
-            // return correctAnswer;
         }
     })
     quistionElement.innerText = question.question;
             allOptions.innerHTML = container
 
 }
-
 showTheData();
-
 
 function getTheNextQyestion(){
     const allInputs = document.querySelectorAll('input[name="option"]');
@@ -65,7 +62,6 @@ function getTheNextQyestion(){
             var checked = rb.value;
             if(checked == correctAnswer){
                 degrees+=10;
-                console.log(degrees);
             }
             showTheData()
         }
