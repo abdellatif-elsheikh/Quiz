@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: url('https://149351115.v2.pressablecdn.com/wp-content/uploads/2017/10/What_are_the_Most_Disliked_Programming_Languages-1.png') no-repeat center center/cover;
+    color: #000735;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quize-container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.quize-container .quistion {
+    margin: 35px;
+    font-size: 1.8rem;
+}
+
+.options {
+    margin: 0 42px 35px
+}
+
+.option {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.option > * {
+    cursor: pointer;
+}
+
+.option label {
+    margin-left: 3px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-size: 1.6rem;
+    color: #fff;
+    border: 0;
+    outline: none;
+    background-color: #17a2b8;
+    cursor: pointer;
+    transition: background-color .25s ease;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #0a7788;
+}
+
+.finished {
+    text-align: center;
+    padding: 35px
+}
+
+.finished h2 {
+    font-size: 4rem;
+    color: #005ec2
+}
+
+.finished h4 {
+    font-size: 2rem;
+    margin: 15px 0 20px;
+}
+
+.finished p {
+    font-size: 1.6rem;
+}
